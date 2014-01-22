@@ -635,7 +635,7 @@ $(window).scroll($.debounce( 250, function(){
         $(".peopleBioTitle").html("SVP, Director of Business Strategy");
         $(".peopleBioPic").animate({'opacity':'0'}, peopleFadeSpeed);
         $("#shiraPicBig").animate({'opacity':'1'}, peopleFadeSpeed);
-        $(".bio").html('<span class="italic">Hitting the high notes</span><br/><br/>With a well-rounded background in advertising, medical education, and a cappella singing, Shira offers a pitch perfect approach to pharmaceutical marketing strategy.<br/><br/>She brings insight from a wide range of companies and therapeutic categories to each new challenge, ensuring that our work stays strategically on target and produces creative, impactful solutions.  She’s received a chorus of client accolades as a smart, analytically driven partner with a record of driving business growth through strategy and marketing.  Shira’s passion, other than karaoke, is working on challenging high-science brands in immunology and oncology.');
+        $(".bio").html('<span class="italic">Hitting the high notes</span><br/><br/>With a well-rounded background in advertising, medical education, and a cappella singing, Shira offers a pitch-perfect approach to pharmaceutical marketing strategy.<br/><br/>She brings insight from a wide range of companies and therapeutic categories to each new challenge, ensuring that our work stays strategically on target and produces creative, impactful solutions.  She’s received a chorus of client accolades as a smart, analytically driven partner with a record of driving business growth through strategy and marketing.  Shira’s passion, other than karaoke, is working on challenging high-science brands in immunology and oncology.');
 
         resetPeople();
 
@@ -645,11 +645,11 @@ $(window).scroll($.debounce( 250, function(){
     });
 	$(".brankaPic").click(function(){
         //on mouse enter
-        $(".peopleBioName").html("Branka Stancevic");
+        $(".peopleBioName").html("Branka Stancevic, PhD");
         $(".peopleBioTitle").html("VP, Medical Director");
         $(".peopleBioPic").animate({'opacity':'0'}, peopleFadeSpeed);
         $("#brankaPicBig").animate({'opacity':'1'}, peopleFadeSpeed);
-        $(".bio").html('<span class="italic">A towering intellect</span><br/><br/>Branka’s as tall as she is smart.  After obtaining her doctorate in biomedical sciences at Cornell University, she left the bench to pursue a career that could combine a passion for science with her marketing edge.  One of Dr. Stancevic’s primary responsibilities at Flashpoint Medica is scientific oversight to ensure all content development and tactical recommendations are aligned with strategic brand objectives.  Branka’s reached new heights in developing strategy and promotional materials for brands across a wide range of therapeutic areas.   She’s published in several top-tier journals and has presented her work at international scientific meetings. After joining the world of advertising, Branka was the recipient of the Healthcare Businesswoman Association 2013 Rising Star Award.');
+        $(".bio").html('<span class="italic">A towering intellect</span><br/><br/>Branka’s as tall as she is smart.  After obtaining her doctorate in biomedical sciences at Cornell University, she left the bench to pursue a career that could combine a passion for science with her marketing edge.  One of Dr. Stancevic’s primary responsibilities at Flashpoint Medica is scientific oversight to ensure all content development and tactical recommendations are aligned with strategic brand objectives.  Branka’s reached new heights in developing strategy and promotional materials for brands across a wide range of therapeutic areas.   She’s published in several top-tier journals and has presented her work at international scientific meetings. After joining the world of advertising, Branka was the recipient of the Healthcare Businesswomen’s Association 2013 Rising Star Award.');
 
         resetPeople();
 
@@ -677,7 +677,7 @@ $(window).scroll($.debounce( 250, function(){
         $(".peopleBioTitle").html("SVP, Management Supervisor");
         $(".peopleBioPic").animate({'opacity':'0'}, peopleFadeSpeed);
         $("#robinPicBig").animate({'opacity':'1'}, peopleFadeSpeed);
-        $(".bio").html('<span class="italic">A competitive spirit</span><br/><br/>Robin demonstrates entrepreneurial agency account leadership and brings a unique strategic, global perspective to her role here at Flashpoint.  She’s always striving to push brands faster and higher.  Which is no surprise given that she’s also always training for the next triathlon. Robin’s motivational, energetic style helps us build and retain high-performance teams, and makes her a valued partner with clients across multiple departments, including executive management, corporate communications, marketing, regulatory, medical, and sales.  Her core strengths include market analysis and strategic insight throughout brand lifecycles, identification and integration of strategic alliances for clients, and immersion in digital and social media.  And with her stamina, you can be assured your brand will be in good hands for the long run.');
+        $(".bio").html('<span class="italic">A competitive spirit</span><br/><br/>Robin demonstrates entrepreneurial agency account leadership and brings a unique strategic, global perspective to her role here at Flashpoint.  She’s always striving to push brands faster and higher.  Which is no surprise given that she’s also always training for the next triathlon. Robin’s motivational, energetic style helps us build and retain high-performance teams, and makes her a valued partner with clients across multiple departments, including executive management, corporate communications, marketing, regulatory, medical, and sales.  Her core strengths include market analysis and strategic insight throughout brand life cycles, identification and integration of strategic alliances for clients, and immersion in digital and social media.  And with her stamina, you can be assured your brand will be in good hands for the long run.');
 
         resetPeople();
 
@@ -961,7 +961,7 @@ $(window).scroll($.debounce( 250, function(){
     $(".genentech").hover(function(){
         //on mouse enter
         
-        $(".bigClient").html('<img class="bigLogo" src="img/work/clients/genentech.png" alt="bigLogo" /><h4 class="text2"><span class="orange2">Tarceva</span><br/><span class="small">NSCLC, Agency of Record<br/>Pancreatic Cancer, Agency of Record</span></h4><br/><h4 class="text2"><span class="orange2">Actemra</span><br/><span class="small">RA, Agency of Record for promotional education</span></h4>');
+        $(".bigClient").html('<img class="bigLogo" src="img/work/clients/genentech.png" alt="bigLogo" /><h4 class="text2"><span class="orange2">Tarceva</span><br/><span class="small">NSCLC, Agency of Record<br/>Pancreatic Cancer, Agency of Record</span></h4><br/><h4 class="text2"><span class="orange2">Actemra</span><br/><span class="small">AOR, Promotional Thought<br />Leader Strategy</span></h4>');
     },
     function(){
         //do nothing on mouse exit

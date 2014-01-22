@@ -30,13 +30,13 @@ $(document).ready(function() {
 	}else{
 		if(uagent.search(deviceAndroid) > -1){
 			//alert("Android tablet");
-			window.location.href="http://www.flashpointmedica.com/fpm.html";
+			window.location.href="fpm.html";
 			/*androidTablet = true;
 			readDeviceOrientation();
 			window.onorientationchange = readDeviceOrientation;*/
 		}else{
 			//alert("Desktop");
-			window.location.href="http://www.flashpointmedica.com/fpm.html";
+			window.location.href="fpm.html";
 		}
 	}
 	
