@@ -2358,39 +2358,33 @@ function playMyVideo(){
 	$('#workVideo').get(0).play();
 }
 
-
-$("#video_overlay").bind('click', function (evt){
-	//$("#charlene_video").hide();
-	//$("#flashpoint_video").hide();
-	//evt.stopPropagation();
-	//$(this).hide();
-	//return false;
-});
-
 $("#vid_close_charlene").bind('click', function (evt){
 	var player = videojs('charlene_video');
 	player.currentTime(0);
 	player.pause();
-	$("#video_overlay").hide();
+	$("#charlene_video_overlay").hide();
 	$("#charlene_video_wrapper").hide();
 });
 
 $("#vid_close_flashpoint").bind('click', function (evt){
 	var player = videojs('flashpoint_video');
-	player.stop();
-	$("#video_overlay").hide();
+	player.currentTime(0);
+	player.pause();
+	$("#flashpoint_video_overlay").hide();
 	$("#flashpoint_video_wrapper").hide();
 });
 
 function playHomeVideo1(){
-	$("#video_overlay").show();
+	$("#charlene_video_overlay").show();
 	$("#charlene_video_wrapper").show();
 	var player = videojs('charlene_video');
 	player.play();
 }
 function playHomeVideo2(){
-	$("#video_overlay").show();
-	$("#flash_video_wrapper").show();
+	$("#flashpoint_video_overlay").show();
+	$("#flashpoint_video_wrapper").show();
+	var player = videojs('flashpoint_video');
+	player.play();
 }
 
 

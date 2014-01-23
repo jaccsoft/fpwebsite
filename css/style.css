@@ -2704,16 +2704,20 @@ nav{
 
 /* --------- VIDEO STYLES --------- */
 
-#charlene_video_wrapper, #flashpoint_video_wrapper, #video_overlay, #homeVideo{
+#charlene_video_wrapper, #flashpoint_video_wrapper, #charlene_video_overlay, #flashpoint_video_overlay, #homeVideo{
 	display: none;
 }
 
-#video_overlay{
+#charlene_video_overlay, #flashpoint_video_overlay{
 	position:absolute;
 	z-index:200;
 	width: 100%;
 	text-align: center;
 }
+#flashpoint_video_overlay{
+	z-index: 201;
+}
+
 
 .vid_close_aff{
 	text-align: right;
