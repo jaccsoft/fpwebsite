@@ -10,7 +10,9 @@
     <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/> 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
-    <link rel="stylesheet" type="text/css" href="css/video-js.min.css"/>
+
+    <link href="http://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.2/video.js"></script>
     
     
 <!--iPad portrait 
@@ -40,6 +42,28 @@
     <div id="coverSoTheMarqueeCanScroll2"></div>
 	
     <div id="container">
+
+    	<div id="video_overlay">
+    		<!-- -->
+    		<div id="charlene_video_wrapper">
+    			<div id="vid_close_charlene" class="vid_close_aff">close</div>
+	    		<video id="charlene_video" class="video-js vjs-default-skin" controls="true" preload="auto" width="900" height="506" data-setup="{}">
+					<source src="videos/homevids/charlene.mp4" type="video/mp4">
+	  				<source src="videos/homevids/charlene.ogg" type="video/ogg">
+	            	<source src="videos/homevids/charlene.webm" type="video/webm">
+				</video>
+			</div>
+			<!-- -->]
+			<div id="flashpoint_video_wrapper">
+				<div id="vid_close_flashpoint" class="vid_close_aff">close</div>
+	    		<video id="flashpoint_video" class="video-js vjs-default-skin" controls preload="auto" width="720" height="405" data-setup="{}">
+					<source src="videos/homevids/flashpoint.mp4" type="video/mp4">
+	  				<source src="videos/homevids/flashpoint.ogg" type="video/ogg">
+	            	<source src="videos/homevids/flashpoint.webm" type="video/webm">
+				</video>
+			</div>
+			<!-- -->
+    	</div>
     
 		<div id="scroll-icon"></div>
         
@@ -133,7 +157,8 @@
                
                 <li>
 						<div class="marq1">
-                        	  <div id="homePlayVideo" style="left:78px; top:340px; position:absolute"><img src="img/charleneHome.jpg"  alt="meet flash" onClick="playHomeVideo();"/></div>
+                        	  <div id="homePlayVideo" style="left:78px; top:340px; position:absolute"><img src="img/charleneHome.jpg"  alt="" onClick="playHomeVideo1();"/></div>
+                        	  <div id="homePlayVideo2" style="left:300px; top:340px; position:absolute"><img src="img/flashpointVidThumb.jpg"  alt="" onClick="playHomeVideo2();"/></div>
                         	  <video id="homeVideo" style="left:6000px; top:340px; width:210px; z-index:200; position:absolute;">
   									<source src="videos/homevideo.mp4" type="video/mp4">
   									<source src="videos/homevideo.ogg" type="video/ogg">
@@ -148,9 +173,8 @@
 								<h3>
 									And meet a multichannel healthcare <br/>communications agency as enthusiastic, <br/>hard-working, and intelligent as he is
 								</h3>
-                                <p class="award" style="margin-top:160px;">
-									Meet Charlene Prounis, </br>CEO & Managing Partner
-								</p>
+                                <p class="award" style="margin-top:160px;">Meet Charlene Prounis, </br>CEO & Managing Partner</p>
+                                <p class="award" style="margin-left: 223px; margin-top: -35px;">See some fetching creative</p>
                                 <!--<img class="paw1" src="img/marq/paw.png" alt="paw link"  />	-->
 							</div>	
 							<div id="flashMarq1"></div>
@@ -1500,7 +1524,6 @@
 
   <script src="js/respond.min.js"></script>
 
-  <script src="js/video.js"></script>
 
   <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDlwX-ShcYuRZvtFDHqrlvIdO_r_WfJOuo&sensor=false"></script> -->
 

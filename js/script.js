@@ -2073,7 +2073,7 @@ if(document.documentElement.clientWidth <= 1024 || document.documentElement.clie
 
 
 function load(){
-    setMarqueeSpacers();
+   //setMarqueeSpacers();
    // setBars();
     checkPager();
     $.waypoints('refresh');
@@ -2120,9 +2120,9 @@ var setWinHeight = function(){
 
 var setMarqueeSpacers = function(){
 
-    $('.dividerTop').css('height',''+(($(window).height() - 140 - $('#marquee').height()) - 100) *0.3+'px');
+    //$('.dividerTop').css('height',''+(($(window).height() - 140 - $('#marquee').height()) - 100) *0.3+'px');
 
-    $('.dividerBottom').css('height',''+(($(window).height() - 140 - $('#marquee').height()) - 100) *0.7+'px');
+    //$('.dividerBottom').css('height',''+(($(window).height() - 140 - $('#marquee').height()) - 100) *0.7+'px');
 };
 
 var startBriefcaseTimer = function(){
@@ -2355,13 +2355,42 @@ var setBars = function() {
 function playMyVideo(){
 	$('#pieceVideo').css('left','3000px');
 	$('#workVideo').css('left','472px');
-	$('#workVideo').get(0).play();	
+	$('#workVideo').get(0).play();
 }
 
-function playHomeVideo(){
-	$('#homePlayVideo').css('left','3000px');
-	$('#homeVideo').css('left','80px');
-	$('#homeVideo').get(0).play();	
+
+$("#video_overlay").bind('click', function (evt){
+	//$("#charlene_video").hide();
+	//$("#flashpoint_video").hide();
+	//evt.stopPropagation();
+	//$(this).hide();
+	//return false;
+});
+
+$("#vid_close_charlene").bind('click', function (evt){
+	var player = videojs('charlene_video');
+	player.currentTime(0);
+	player.pause();
+	$("#video_overlay").hide();
+	$("#charlene_video_wrapper").hide();
+});
+
+$("#vid_close_flashpoint").bind('click', function (evt){
+	var player = videojs('flashpoint_video');
+	player.stop();
+	$("#video_overlay").hide();
+	$("#flashpoint_video_wrapper").hide();
+});
+
+function playHomeVideo1(){
+	$("#video_overlay").show();
+	$("#charlene_video_wrapper").show();
+	var player = videojs('charlene_video');
+	player.play();
+}
+function playHomeVideo2(){
+	$("#video_overlay").show();
+	$("#flash_video_wrapper").show();
 }
 
 

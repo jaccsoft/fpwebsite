@@ -799,7 +799,7 @@ and (min-width : 1025px) {
 
 .marq1 h3{
 	width:620px;
-	margin-top:50px;
+	margin-top:25px;
 }
 
 .marq1 .paw1{
@@ -2694,12 +2694,46 @@ nav{
 }
 }
 
-#homePlayVideo{
+#homePlayVideo, #homePlayVideo2{
 	cursor: pointer; cursor: hand;
 }
 
 #pieceVideo{
 	cursor: pointer; cursor: hand;
+}
+
+/* --------- VIDEO STYLES --------- */
+
+#charlene_video_wrapper, #flashpoint_video_wrapper, #video_overlay, #homeVideo{
+	display: none;
+}
+
+#video_overlay{
+	position:absolute;
+	z-index:200;
+	width: 100%;
+	text-align: center;
+}
+
+.vid_close_aff{
+	text-align: right;
+	font-size: 18px;
+	cursor: pointer;
+	margin-bottom: 4px;
+}
+
+#charlene_video_wrapper, #flashpoint_video_wrapper{
+	position: relative;
+	top: 130px;
+	margin: 0 auto;
+	width: 900px;
+	text-align: center;
+}
+
+#charlene_video, #flashpoint_video{
+	-moz-box-shadow:    3px 3px 8px 6px rgba(100,100,100,.3);
+  	-webkit-box-shadow: 3px 3px 8px 6px rgba(100,100,100,.3);
+  	box-shadow:         3px 3px 8px 6px rgba(100,100,100,.3);
 }
 
 /* --------- Sized for iPad --------------
