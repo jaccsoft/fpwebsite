@@ -2699,7 +2699,7 @@ nav{
 }
 
 #pieceVideo{
-	cursor: pointer; cursor: hand;
+	/* cursor: pointer; cursor: hand; */
 }
 
 /* --------- VIDEO STYLES --------- */
@@ -2739,7 +2739,6 @@ nav{
   	-webkit-box-shadow: 3px 3px 8px 6px rgba(100,100,100,.3);
   	box-shadow:         3px 3px 8px 6px rgba(100,100,100,.3);
 }
-
 /* --------- Sized for iPad --------------
 @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
  ipad 4
